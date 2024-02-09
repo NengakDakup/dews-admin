@@ -2,7 +2,7 @@ import { BRAND } from "@/types/brand";
 import Image from "next/image";
 import DropdownDefault from "../Dropdowns/DropdownDefault";
 
-const brandData: BRAND[] = [
+const brandData: any = [
   {
     logo: "/images/brand/brand-01.svg",
     name: "Google",
@@ -82,7 +82,7 @@ const TableFour: React.FC = () => {
             </div>
           </div>
 
-          {brandData.map((brand, key) => (
+          {brandData.map((brand: any, key: any) => (
             <div
               className={`grid grid-cols-3 sm:grid-cols-4 ${
                 key === brandData.length - 1
